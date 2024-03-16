@@ -1,9 +1,11 @@
 nav {
   flex: 1;
-  display: flex;
-  justify-content: center;
+  max-width: 428px;
   height: 100%;
-  gap: 10%;
+  display: flex;
+  justify-content: space-between;
+  gap: 5px;
+  margin: 0 5px;
   .nav_link {
     height: 100%;
     display: flex;
