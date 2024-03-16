@@ -3,7 +3,10 @@
 html {
   --main-width: 1366px;
   --header-height: 105px;
-  --footer-height: 336px;
+  --footer-height: 335px;
+
+  --color-text-black-80: rgb(52, 52, 52);
+  --color-text-black-60: rgb(98, 98, 98);
 }
 
 body {
@@ -11,6 +14,7 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
+  color: var(--color-text-black-80);
 }
 
 a {
@@ -19,6 +23,7 @@ a {
 }
 
 .container {
-  max-width: var(--main-width);
+  max-width: calc(var(--main-width) - 20px * 2 - 78px * 2);
   margin: 0 auto;
+  padding: 20px 98px 78px;
 }
