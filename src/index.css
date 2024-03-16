@@ -1,4 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
 html {
-  --header-height: 7vh;
-  --footer-height: 10vh;
+  --header-height: 105px;
+  --footer-height: 336px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
 }
