@@ -8,7 +8,7 @@ const Layout: React.FC = () => {
     <>
       <Header />
       <main>
-        <Suspense fallback={"Load..."}>
+        <Suspense fallback={"Loading..."}>
           <Outlet />
         </Suspense>
       </main>
