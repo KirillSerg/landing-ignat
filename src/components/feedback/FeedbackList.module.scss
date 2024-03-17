@@ -26,6 +26,9 @@
       .btn_group {
         display: flex;
         gap: 20px;
+        button {
+          all: unset;
+        }
       }
     }
   }
