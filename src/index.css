@@ -5,10 +5,13 @@ html {
   --header-height: 105px;
   --footer-height: 335px;
 
-  --color-text-white: rgb(255, 255, 255);
-  --color-text-black-100: rgb(0, 0, 0);
-  --color-text-black-80: rgb(52, 52, 52);
-  --color-text-black-60: rgb(98, 98, 98);
+  --color-white: rgb(255, 255, 255);
+  --color-black-100: rgb(0, 0, 0);
+  --color-black-80: rgb(52, 52, 52);
+  --color-black-60: rgb(98, 98, 98);
+  --color-black-40: rgb(149, 149, 149);
+  --color-black-20: rgb(204, 204, 204);
+  --color-accent: rgb(74, 170, 78);
 }
 
 body {
@@ -16,12 +19,19 @@ body {
   margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  color: var(--color-text-black-80);
+  color: var(--color-black-80);
 }
 
 a {
   all: unset;
   cursor: pointer;
+}
+
+h3,
+p,
+ul,
+li {
+  all: unset;
 }
 
 .container {

@@ -116,3 +116,17 @@ export const BasketIcon = ({ style }: Props) => {
     </svg>
   );
 };
+export const ArrowDown = ({ style }: Props) => {
+  return (
+    <svg
+      className={style}
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M18 14L12 8L6 14" stroke="#343434" strokeLinecap="round" />
+    </svg>
+  );
+};
