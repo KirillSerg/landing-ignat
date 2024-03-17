@@ -1,0 +1,41 @@
+.feedback_box {
+  .header {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      font-size: 26px;
+      font-weight: 500;
+      line-height: 40px;
+      color: var(--color-black-100);
+      p {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 40px;
+        color: var(--color-black-40);
+      }
+    }
+    .navigate {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      .btn_group {
+        display: flex;
+        gap: 20px;
+      }
+    }
+  }
+  .feedback_list {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 30px;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

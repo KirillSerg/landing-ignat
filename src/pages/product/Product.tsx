@@ -7,7 +7,8 @@ import product3 from "../../assets/images/product2.png";
 import styles from "./Product.module.scss";
 import { Link } from "react-router-dom";
 import { ArrowDown, BasketIcon, HeartIcon } from "../../assets/icons";
-import { colors, productInfo, sizes } from "../../assets/mockData";
+import { colors, productInfo } from "../../assets/mockData";
+import FeedbackList from "../../components/feedback/FeedbackList";
 
 const images = [product1, product2, product3];
 
@@ -50,16 +51,14 @@ const Product: React.FC = () => {
               <div className={styles.sizes}>
                 <p>оберіть розмір:</p>
                 <ul className={styles.size_box}>
-                  {sizes.map((size, i) => (
+                  {Array.from({ length: 7 }).map((_, i) => (
                     <li
                       key={i}
                       onClick={() => setActiveSize(i)}
                       className={`${styles.size} ${
                         i === activeSize ? styles.active : ""
                       }`}
-                    >
-                      {size}
-                    </li>
+                    ></li>
                   ))}
                 </ul>
               </div>
@@ -108,6 +107,7 @@ const Product: React.FC = () => {
             </div>
           </div>
         </section>
+        <FeedbackList />
       </div>
     </div>
   );

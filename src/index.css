@@ -22,7 +22,8 @@ body {
   color: var(--color-black-80);
 }
 
-a {
+a,
+button {
   all: unset;
   cursor: pointer;
 }
